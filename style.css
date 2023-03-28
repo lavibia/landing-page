@@ -5,13 +5,19 @@
     box-sizing: border-box;
     margin: 0;
 }
+.shadow{
+    box-shadow:  0 10px 20px  rgba(74, 77, 78, 0.8);
+}
+.bg-dark{
+    background-color: #131412;
+    color:white;
+}
 /* banner */
 .banner{
-    background-color: #1F2937;
-    color:white;
+    
     padding: 10px;
-    height: 10vh;
-    width: 100vw;
+    height: 7vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -37,19 +43,55 @@ a{
 .hero{
     font-size: 36px;
     display: flex;
-    height: 90vh;
+    height: 93vh;
+    width: 100%;
     padding: 10vh;
+    justify-content: space-around;
+    align-items: center;
 }
 .hero >div{
     flex:1;
-    justify-content: space-around
+   
 }
 .hero> #hero-left{
     display: flex;
     flex-direction: column;
-   
-    justify-content: space-around;
+   flex:0.75;
+    
 }
 #hero-left >h1{
     font-size: 48px;
+}
+#usage{
+    font-size: 36px;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding-top: 10vh;
+    flex:1;
+    align-items: center;
+    flex-direction: column;
+}
+#usage>h2{
+    padding-bottom: 10vh;
+    flex:0.1;
+}
+#usage>.usage-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex:auto;
+    width: 70%;
+  
+}
+.card{
+    height: 40vh;
+    margin: 0 10px;
+    border-radius: 7px;
+}
+.card >img{
+    margin: 10px;
+    height: 65%;
+    border-radius: 7px;
+    object-fit: cover;
 }
